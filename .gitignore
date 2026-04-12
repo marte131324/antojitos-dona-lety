@@ -4,3 +4,11 @@
 *.pdf
 node_modules/
 .env
+*.mp4
+*.mov
+*.zip
+*.psd
+*.ai
+*.eps
+backup_assets/
+*.webm
