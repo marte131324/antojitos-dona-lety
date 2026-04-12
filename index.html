@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antojitos Lety | Menú Digital Premium</title>
+    <meta name="description" content="Antojitos Lety - El Sabor Auténtico Veracruzano. Empanadas, Picadas, Quesadillas, Huaraches y más. Pide por WhatsApp. Av. Laguna de Pátzcuaro 279, El Coyol, Veracruz.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antojitos-dona-lety.vercel.app/">
+    <meta property="og:title" content="Antojitos Lety | El Sabor Auténtico Veracruzano">
+    <meta property="og:description" content="Empanadas, Picadas, Quesadillas, Huaraches y más. Pide por WhatsApp. Av. Laguna de Pátzcuaro 279, El Coyol, Veracruz.">
+    <meta property="og:image" itemprop="image" content="https://antojitos-dona-lety.vercel.app/img/og-image.jpg?v=1">
+    <meta property="og:image:secure_url" content="https://antojitos-dona-lety.vercel.app/img/og-image.jpg?v=1">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Antojitos Lety | El Sabor Auténtico Veracruzano">
+    <meta name="twitter:description" content="Empanadas, Picadas, Quesadillas, Huaraches y más. Pide por WhatsApp.">
+    <meta name="twitter:image" content="https://antojitos-dona-lety.vercel.app/img/og-image.jpg?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-logo-container">
+            <img src="img/logo.jpg" alt="Antojitos Lety Logo">
+        </div>
+        <div class="splash-loader"></div>
+    </div>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="img/logo.jpg" alt="Logo Antojitos Lety" class="main-logo">
+        </div>
+        <h1 class="business-name">Antojitos Lety</h1>
+        <p class="slogan">"El Sabor Auténtico Veracruzano"</p>
+        
+        <div class="contact-actions">
+            <div class="status-pill">
+                <i class="fas fa-circle"></i> ABIERTO
+            </div>
+            <a href="https://maps.google.com/?q=Av.+laguna+de+patzcuaro+279+el+coyol+veracruz" target="_blank" class="action-pill">
+                <i class="fas fa-map-marker-alt"></i> Visítanos
+            </a>
+            <a href="https://wa.me/522295483697" class="action-pill whatsapp-pill" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <a href="#empanadas" class="category-btn active">Empanadas</a>
+        <a href="#picadas" class="category-btn">Picadas</a>
+        <a href="#quesadillas" class="category-btn">Quesadillas</a>
+        <a href="#especialidades" class="category-btn">Especialidades</a>
+        <a href="#bebidas" class="category-btn">Bebidas</a>
+    </nav>
+
+    <main class="menu-container">
+        
+        <!-- Category: Empanadas -->
+        <section id="empanadas" class="category-section">
+            <h2 class="category-title">Empanadas</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Empanadas.jpg');">
+                        <span class="dish-price">$13</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Empanada Sencilla</h3>
+                        <p class="dish-desc">Nuestra tradicional empanada doradita a la perfección.</p>
+                        <button class="add-to-cart-btn" data-id="emp-sencilla" data-name="Empanada Sencilla" data-price="13">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Empanadas1.jpg');">
+                        <span class="dish-price">$18</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Empanada Combinada</h3>
+                        <p class="dish-desc">Elige tu relleno de especialidad favorito.</p>
+                        <button class="add-to-cart-btn" data-id="emp-combinada" data-name="Empanada Combinada" data-price="18" data-variants="Queso con Bistec,Pastor,Champiñón,Papa Habanero,Nopales,Pollo Guisado,Picadillo">Añadir al pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Picadas -->
+        <section id="picadas" class="category-section">
+            <h2 class="category-title">Picadas Tradicionales</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Picadas.jpg');">
+                        <span class="dish-price">$10</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Picada Sencilla</h3>
+                        <p class="dish-desc">Auténtica masa de maíz con salsa y queso.</p>
+                        <button class="add-to-cart-btn" data-id="picada-sencilla" data-name="Picada Sencilla" data-price="10" data-variants="Salsa Roja,Salsa Verde">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Picadas.jpg');">
+                        <span class="dish-price">$22</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Picada con Bistec</h3>
+                        <p class="dish-desc">Picada tradicional coronada con jugoso bistec asado.</p>
+                        <button class="add-to-cart-btn" data-id="picada-bistec" data-name="Picada con Bistec" data-price="22">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Picadas.jpg');">
+                        <span class="dish-price">$25</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Picada Preparada Combinada</h3>
+                        <p class="dish-desc">Con tu guiso favorito encima, la combinación perfecta.</p>
+                        <button class="add-to-cart-btn" data-id="picada-combinada" data-name="Picada Preparada Combinada" data-price="25" data-variants="Queso con Bistec,Pastor,Champiñón,Papa Habanero,Nopales,Pollo Guisado,Picadillo">Añadir al pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Quesadillas -->
+        <section id="quesadillas" class="category-section">
+            <h2 class="category-title">Quesadillas</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Quesadilla.jpg');">
+                        <span class="dish-price">$45</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Quesadilla Mediana</h3>
+                        <p class="dish-desc">Deliciosa quesadilla, ideal para saciar el antojo.</p>
+                        <button class="add-to-cart-btn" data-id="quesadilla-med" data-name="Quesadilla Mediana" data-price="45">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Quesadilla.jpg');">
+                        <span class="dish-price">$60</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Quesadilla Grande</h3>
+                        <p class="dish-desc">Nuestra quesadilla especial, extra grande con abundante queso.</p>
+                        <button class="add-to-cart-btn" data-id="quesadilla-gde" data-name="Quesadilla Grande" data-price="60">Añadir al pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Especialidades -->
+        <section id="especialidades" class="category-section">
+            <h2 class="category-title">Especialidades & Más</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Huarache.jpg');">
+                        <span class="dish-price">$80</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Huaraches</h3>
+                        <p class="dish-desc">Tradicionales huaraches, base de masa firme y abundante topping.</p>
+                        <button class="add-to-cart-btn" data-id="huarache" data-name="Huaraches" data-price="80">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/Enchiladas.jpg');">
+                        <span class="dish-price">$20</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Enchiladas Rellenas</h3>
+                        <p class="dish-desc">Hechas a mano. Precio por pieza.</p>
+                        <button class="add-to-cart-btn" data-id="enchilada" data-name="Enchilada Rellena" data-price="20">Añadir al pedido</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1589135328841-4122d9cb303a?auto=format&fit=crop&q=80&w=800');">
+                        <span class="dish-price">$18</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Minilla</h3>
+                        <p class="dish-desc">Guiso tradicional sazonado a la perfección.</p>
+                        <button class="add-to-cart-btn" data-id="minilla" data-name="Minilla" data-price="18">Añadir al pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Bebidas -->
+        <section id="bebidas" class="category-section">
+            <h2 class="category-title">Bebidas Refrescantes</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img" style="background-image: url('img/agua-de-jamaica.jpg');">
+                        <span class="dish-price">$28</span>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Agua de Jamaica (1 Litro)</h3>
+                        <p class="dish-desc">Refrescante y natural para acompañar tus antojitos.</p>
+                        <button class="add-to-cart-btn" data-id="agua-jamaica" data-name="Agua de Jamaica 1L" data-price="28">Añadir al pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="premium-footer">
+        <h2 class="footer-title">Reserva o Pide para Llevar</h2>
+        <p class="footer-subtitle">Contacta directamente con Antojitos Lety</p>
+        <div class="footer-social-links">
+            <a href="https://wa.me/522295483697" class="footer-btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+            </a>
+            <a href="https://maps.google.com/?q=Av.+laguna+de+patzcuaro+279+el+coyol+veracruz" target="_blank" class="footer-btn btn-maps">
+                <i class="fas fa-map-marker-alt"></i> <span>Ubicación</span>
+            </a>
+            <a href="#" class="footer-btn btn-facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+            </a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copyright">© 2026 Antojitos Lety. Sabor Auténtico Jarocho.</p>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <button class="floating-cart" id="floatingCartBtn" style="display: none;">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCountBadge">0</span>
+    </button>
+
+    <!-- Variants Modal -->
+    <div class="modal-overlay" id="variantsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Elige el Relleno / Guiso</h3>
+                <button class="close-modal" onclick="closeModal('variantsModal')"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="variantsContainer">
+                <!-- Variant buttons will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tu Pedido</h3>
+                <button class="close-modal" onclick="closeModal('cartModal')"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItemsContainer" class="cart-items-list">
+                    <!-- Cart items will be listed here -->
+                </div>
+                <div class="cart-total-section">
+                    <strong>Total:</strong> <span id="cartTotalDisplay">$0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <input type="text" id="customerName" placeholder="Tu Nombre (Opcional)" class="cart-input">
+                    <textarea id="customerNote" placeholder="Notas adicionales (Ej. Sin cebolla...)" class="cart-input"></textarea>
+                    <button class="checkout-btn" id="whatsappCheckoutBtn">
+                        <i class="fab fa-whatsapp"></i> Enviar Pedido por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+<!-- TREZE SIGNATURE -->
+<a href="https://wa.me/522214092478?text=Hola%20Treze%20Labs%2C%20me%20gustar%C3%ADa%20solicitar%20el%20desarrollo%20de%20un%20sistema%20profesional." target="_blank" style="display: flex; justify-content: center; text-decoration: none; margin-top: 24px; margin-bottom: 24px; opacity: 0.6; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">
+    <img src="img/footer.png" alt="Ingeniería Digital por Treze Labs" style="max-height: 38px; object-fit: contain; filter: brightness(0);">
+</a>
+
+</body>
+</html>
